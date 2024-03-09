@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yakimovich Artyom PW1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #058374;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 15%;
+  background: #0bb6d0;
+  padding: 10px;
+  height: 1270px;
+}
+article {
+  float: left;
+  padding: 10px;
+  width: 85%;
+  height: 1270px;
+  background-color: #f7f5e3 ;
+   /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #058374;
+  
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Yakimovich Artyom PW1</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#1">When HTML has become a standard?</a></li>
+      <li><a href="#2">What is the difference?</a></li>
+      <li><a href="#3">What is the minimal HTML page code?</a></li>
+      <li><a href="#4">Why presentational markup is considered now?</a></li>
+      <li><a href="#5">How can you check browser support?</a></li>
+      <li><a href="#6">What are the audio and video formats?</a></li>
+    </ul>
+  </nav>
+  
+    <article>
+    <h1 id="1">When HTML5 has become a standard? What were the main reasons for developing new standard?</h1>
+    <p>HTML5 became a standard on October 28, 2014, by the World Wide Web Consortium (W3C). The main reasons for developing this new standard were to address the shortcomings of previous HTML versions, accommodate new technologies like multimedia elements without the need for additional plugins, improve accessibility, and facilitate the development of richer and more interactive web applications.</p>
+    
+    
+    <h1 id="2">What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</h1>
+    <p>The main difference between W3C HTML5 and WHATWG HTML Living Standard lies in the development process. W3C HTML5 was developed by the W3C working group, while WHATWG HTML Living Standard was developed by the Web Hypertext Application Technology Working Group (WHATWG). W3C HTML5 is considered a snapshot of WHATWG HTML Living Standard, as it was frozen at a certain point in development.<p>
+    
+    <h1 id="3">What is the minimal HTML page code?</h1>
+    <p>The minimal HTML page code is as follows:</p>
+<dd>1. Start with an opening HTML tag: "html"
+<p>2. Inside the HTML tag, include an opening head tag: "head"</p>
+<p>3. Within the head tag, include an opening title tag: "title"</p>
+<p>4. Inside the title tag, provide a title for the webpage (e.g., "My Webpage")</p>
+<p>5. Close the title tag: "/title"</p>
+<p>6. Close the head tag: "/head"</p>
+<p>7. Open the body tag: "body"</p>
+<p>8. Inside the body tag, add the content of your webpage (e.g., text, images, links)</p>
+<p>9. Close the body tag: "/body"</p>
+<h1 id="4">Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</h1>
+    <p>Semantic markup focuses on the meaning and structure of content, making it easier for browsers, search engines, and assistive technologies to understand and interpret the content correctly. Presentational markup, on the other hand, deals with styling and appearance, which can lead to less accessible and maintainable code. Presentational markup is considered deprecated now because it mixes content with styling, making it harder to maintain, less accessible, and less adaptable to different devices and user preferences.
+    </p>
+    
+    <h1 id="5">How you can check browser support for particular tag or attribute?</h1>
+    <p>To check browser support for a particular tag or attribute, you can refer to resources like MDN Web Docs or Can I Use website. These platforms provide detailed information about browser compatibility for HTML elements, attributes, CSS properties, and JavaScript APIs.</p>
+
+   <h1 id="6">What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</h1>
+    <p>The audio and video formats officially supported by the HTML standard are MP3 for audio and MP4 for video. If other formats are used, it might not be supported by all browsers and might require additional plugins or fallback mechanisms to play properly.</p>
+  </article>
+</section>
+
+<footer>
+  <h3>Video</h3>
+  <video width="400" controls>
+    <source src="mers.mp4" type="video/mp4">
+</video>
+
+<h3>Audio</h3>
+<audio controls>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+<p><img src="sb.png" alt="sb bsu" ></p>
+<p>The lab was intresting, everything was clear. I haven't learnt anything new, becouse i already had the cource of HTML at school.</p>
+
+
+
+</footer>
+
+</body>
+</html>
