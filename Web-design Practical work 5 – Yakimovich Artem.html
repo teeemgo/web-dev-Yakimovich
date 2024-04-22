@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5 - CSS Concepts</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            float: right;
+            max-width: 400px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Practical 5 - CSS Concepts</h1>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Box Model</a></li>
+                <li><a href="#clearfix-hack">Clearfix Hack</a></li>
+                <li><a href="#margin-collapse">Margin Collapse</a></li>
+                <li><a href="#holy-grail-layout">Holy Grail Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="box-model">
+            <img src="box-model.png" height="100" alt="Box Model Diagram">
+            <h2>Box Model in CSS</h2>
+            <p>The box model in CSS is the fundamental concept of how elements are rendered in a document. It consists of content, padding, border, and margin.</p>
+            <p>The <code>box-sizing</code> property determines how the width and height of an element are calculated, including its padding and border. By default, it's set to <code>content-box</code>, which means the width and height only include the content, but you can change it to <code>border-box</code> to include padding and border in the dimensions.</p>
+        </article>
+
+        <article id="clearfix-hack">
+            <img src="clearfix-hack.png" height="130" alt="Clearfix Hack Diagram">
+            <h2>Clearfix Hack</h2>
+            <p>The clearfix hack is a technique used to clear the floated elements within a container to ensure proper layout and prevent collapsing of the container's height. It's typically applied to parent containers that contain floated child elements.</p>
+        </article>
+
+        <article id="margin-collapse">
+            <h2>Margin Collapse</h2>
+            <img src="margin-collapse.png" height="100" alt="Margin Collapse Diagram">
+            <p>Margin collapse occurs when the top and bottom margins of two or more elements are adjacent. Instead of stacking, the margins collapse into a single margin. This behavior can affect the spacing between elements.</p>
+            <p><code>margin: auto;</code> is commonly used to horizontally center an element within its parent container. Negative margin values can be used to create overlapping or offset effects between elements.</p>
+        </article>
+
+        <article id="holy-grail-layout">
+            <h2>Holy Grail Layout</h2>
+            <img src="holy-grail-layout.png" height="100" alt="Holy Grail Layout Diagram">
+            <p>The Holy Grail Layout is a classic web design pattern consisting of a header, footer, and three columns of content, where the center column is the tallest and is positioned between the other two columns.</p>
+            <p>One problem with achieving the Holy Grail Layout was the difficulty in making all columns the same height without using hacks or complex CSS.</p>
+            <p>Modern ways to achieve the Holy Grail Layout include using Flexbox or CSS Grid layout techniques, which provide more straightforward and flexible solutions.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Created by: Yakimovich Artyom</p>
+        <p>Course: Web-design</p>
+        <p>Date: 20.04.2024</p>
+        <p>Day: Monday</p>
+        <p>Place: sb bsu</p>
+    </footer>
+</body>
+</html>
