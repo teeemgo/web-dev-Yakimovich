@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        /* Basic styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Main styles */
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Top news styles */
+        .top-news {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .top-news img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* News styles */
+        .news {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            flex: 1;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+    </header>
+
+    <main class="main">
+        <section class="top-news">
+            <!-- Top news content goes here -->
+            <img src="top-news-image.jpg" width="500" alt="Top News Image">
+            <h2>Top News Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Read More</button>
+        </section>
+
+        <section class="news">
+            <!-- News content goes here -->
+            <div class="news-item">
+                <img src="news1-thumbnail.jpg" alt="News 1 Thumbnail">
+                <h2>News Title 1</h2>
+                <p class="meta-info">Published on January 1, 2024</p>
+                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Read More</button>
+            </div>
+            <!-- Repeat the above news item structure for each news item -->
+        </section>
+
+        <aside class="sidebar">
+            <!-- Sidebar content goes here -->
+            <h2>Navigation Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
