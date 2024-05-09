@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Form</title>
+    <style>
+        /* Optional CSS styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button[type="reset"] {
+            background-color: #dc3545;
+        }
+        output {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="calculatorForm">
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1" name="num1" value="0">
+        
+        <label for="operator">Operation:</label>
+        <select id="operator" name="operator">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+        </select>
+        
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2" name="num2" value="0">
+        
+        <button type="button" onclick="performCalculation()">Calculate</button>
+        <button type="reset">Reset</button>
+        
+        <output id="result"></output>
+    </form>
+
+    <script>
+        function performCalculation() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var operator = document.getElementById("operator").value;
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = calculate(num1, operator, num2);
+            if (!isNaN(result)) {
+                document.getElementById("result").textContent = "Result: " + result;
+            } else {
+                document.getElementById("result").textContent = "Error: Invalid input";
+            }
+        }
+
+        function calculate(num1, operator, num2) {
+            switch (operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if (num2 != 0) {
+                        return num1 / num2;
+                    } else {
+                        return NaN;
+                    }
+                default:
+                    return NaN;
+            }
+        }
+    </script>
+</body>
+</html>
