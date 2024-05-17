@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Task 3: Answers to questions */
+    #text__paragraphs {
+      margin-bottom: 20px;
+    }
+
+    /* Task 5: Advanced CSS selectors */
+    * {
+      font-family: 'Roboto', sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: lightgray;
+    }
+
+    table tr td:last-child {
+      color: blue;
+    }
+
+    ul li:nth-child(even) {
+      background-color: lightblue;
+    }
+
+    table tr:nth-child(odd) {
+      background-color: lightgreen;
+    }
+
+    p::first-letter {
+      font-size: 150%;
+    }
+
+    ::selection {
+      background-color: yellow;
+    }
+
+    ul::before {
+      content: '\2192'; /* Unicode arrow character */
+      margin-right: 5px;
+    }
+
+    /* Task 6: :not pseudo-selector */
+    p:not(#special) {
+      color: gray;
+    }
+  </style>
+</head>
+<body id="top">
+  <!-- Task 2: Copied content from "text" section -->
+  <main role="main">
+    <section id="text">
+      <!-- Content from the "text" section -->
+    </section>
+  </main>
+
+  <!-- Task 4: Linking Roboto font -->
+
+  <!-- Task 6: Add the "special" paragraph -->
+  <p id="special">This paragraph is special and won't be affected by :not selector.</p>
+
+  <!-- Task 1: Minimal HTML markup -->
+</body>
+</html>
